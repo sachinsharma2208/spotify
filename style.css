@@ -1,0 +1,215 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=play_circle');
+
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+
+    font-family:"Ubuntu", serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding:0 12px;
+}
+
+.brand img {
+    width: 47px;
+    padding: 0 9px;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+
+
+}
+
+.container{
+    min-height: 70vh;
+    background-color: black; 
+    color: white;
+    font-family: 'varela Round',sans-serif;
+    /* font-family:"Ubuntu", serif; */
+    display:flex;
+    width: 70%;
+    margin :23px auto;
+    border-radius: 12px;
+    padding:34px;
+    background-image: url("bg.jpg");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.songItemContainer{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.bottom{
+    position:sticky;
+    /* I will stick to the screen when you reach my scroll position */
+    /* bottom: 0; */
+    height: 120px;
+    background-color: rgb(10, 10, 10);
+    color: white;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    font-size: 2rem;
+} 
+.icons{
+    margin-top: 14px;
+    
+}
+
+.icons{
+    cursor: pointer;
+}
+
+#rangeSlider{
+    width: 161vh;
+    position: relative;
+    cursor: pointer;
+    /* top:-25px; */
+
+}
+
+span{
+font-family: 'Material Symbols Outlined';
+align-self: center;
+/* font-size:43px; */
+margin: 10px 10px;
+justify-content: space-between;
+cursor: pointer;
+}
+
+
+.songItem{
+    font-family: 'varela Round',sans-serif;
+    /* font-family:"Ubuntu", serif; */
+    /* font-family: 'Material Symbols Outlined'; */
+    height:50px;
+    display: flex;
+    background-color:rgb(241, 234, 234);
+    color:black;
+    margin: 10px 0px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+    
+}
+
+.statement{
+align-self: center;
+color:black;
+font-size:14px;
+margin: 10px 10px;
+
+  
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 10px;
+    border-radius: 34px;
+}
+.timestrap{
+    margin-right: 12px;
+    color: black;
+    font-size: 12px;
+    cursor: pointer;
+}
+h1{
+    margin-bottom: 30px;
+
+}
+
+.songInfo{
+    position: absolute;
+    left :13vw;
+    font-size: 15px;
+    /* font-family: 'varela Round',sans-serif; */
+    
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.3s ease-in;  /* appear time in screen */
+    height: 40px;
+    width: 40px;
+    font-size: 10px;
+
+}
+@media screen and (max-width: 480px) {
+
+.songName{
+    overflow: hidden;
+    font-size: 12px;
+}
+.songlistplay{
+    display: flex;
+    text-align: center;
+    justify-items: center;
+    
+
+}
+.bottom{
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    height: 175px;
+    
+    
+}
+.imogi{
+    padding: 12px;
+}
+#gif{
+   
+}
+h1{
+    text-align: center;
+    margin-top: 15px;
+}
+.songInfo{
+    
+    position: relative;
+    font-size: 15px;
+     flex-direction: column;
+    padding-bottom: 45px;
+    margin-right: 125px;
+    margin-bottom: 30px;
+}
+.icons{
+    /* padding-top: 20px; */
+
+}
+#rangeSlider{
+    margin-top: 50px;
+    width: 75%;
+}
+
+
+}
